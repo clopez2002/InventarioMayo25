@@ -5,14 +5,14 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "userandlaptopDB")
-public class Device {
+@Table(name = "deviceTable")
+public class Computer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private int identificatoin;
+    private int identification;
 
     private String serial;
 
