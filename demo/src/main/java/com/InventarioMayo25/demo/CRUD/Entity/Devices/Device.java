@@ -8,9 +8,13 @@ public abstract class Device {
 
     private String name;
 
-    private Date startDate;
+    private Date deliveryDate;
 
-    private Date endDate;
+    private Date returnDate;
+
+    private Date breakDate;
+
+    private int numberOfDevice;
 
 /*******************************************************************/
 
