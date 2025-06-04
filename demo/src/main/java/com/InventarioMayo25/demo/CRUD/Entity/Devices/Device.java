@@ -2,25 +2,37 @@ package com.InventarioMayo25.demo.CRUD.Entity.Devices;
 
 import lombok.RequiredArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.Date;
 @RequiredArgsConstructor
 public abstract class Device {
 
     private String name;
 
-    private Date deliveryDate;
+    private LocalDate deliveryDate;
 
-    private Date returnDate;
+    private LocalDate returnDate;
 
-    private Date breakDate;
+    private LocalDate breakDate;
 
     private int numberOfDevice;
 
 /*******************************************************************/
 
+    public Device (){
+        this.deliveryDate = LocalDate.now();
+    }
+
+/*******************************************************************/
+
+    public Object getDeliveriDay() {
+        return deliveryDate;
+    }
 
 
 /*******************************************************************/
+
+
 
 
 /*******************************************************************/

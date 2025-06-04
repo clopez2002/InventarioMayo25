@@ -1,27 +1,25 @@
 package com.InventarioMayo25.demo.CRUD.Entity.Devices;
 
-import jakarta.persistence.*;
-import lombok.Data;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.springframework.util.Assert;
 
-@Data
-@Entity
-@Table(name = "hubTable")
-public class Hub extends Device {
+import static org.junit.jupiter.api.Assertions.*;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+class HeadsetTest {
 
 /*************************************************************************************************/
 
-    public Hub (){
+    @Test
+    public void test01InstanceOfHeadsetIsNotNull (){
 
-
+        Headset headset = new Headset();
+        Assertions.assertNotNull(headset);
     }
 
 /*************************************************************************************************/
 /*************************************************************************************************/
 /*************************************************************************************************/
-/*************************************************************************************************/
+
 
 }
