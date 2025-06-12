@@ -1,7 +1,11 @@
 package com.InventarioMayo25.demo.CRUD.Entity;
 
+import com.InventarioMayo25.demo.CRUD.Entity.Devices.Device;
+import com.InventarioMayo25.demo.CRUD.Entity.Devices.Headset;
 import jakarta.persistence.*;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 @Entity
@@ -31,5 +35,13 @@ public class Computer {
     private int hdd;
 
     private String gpu;
+
+    @OneToOne
+    private User user;
+
+    @ManyToMany
+    private List<Headset> devices;
+
+
 
 }

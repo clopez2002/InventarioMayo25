@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
 
+import java.time.LocalDate;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class HeadsetTest {
@@ -18,6 +20,16 @@ class HeadsetTest {
     }
 
 /*************************************************************************************************/
+
+    @Test
+    public void test02DeliveryDateOfDeviceIsTheDateOfInstanceCreation (){
+
+        Headset headset = new Headset();
+        LocalDate today = LocalDate.now();
+        Assertions.assertEquals(today,headset.getDeliveriDay() );
+
+    }
+
 /*************************************************************************************************/
 /*************************************************************************************************/
 
